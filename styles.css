@@ -1,22 +1,180 @@
-.under_construction {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome */
-    -moz-transform: translate(-50%, -50%); /* Firefox */
-    -ms-transform: translate(-50%, -50%); /* IE 9 */
-    -o-transform: translate(-50%, -50%); /* Opera */
-    max-width: 80%;
-    max-height: 80%;
-    text-align: center;
-    font-family: 'Audiowide', cursive;
-    color: #607D8B;
+.portfolio-header {
+  position: relative;
+  background: #fff
 }
 
-.under_construction_logo {
-    width: 100%;
-    height: auto;
-    margin-bottom: 32px;
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mdl-layout__title {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+.portfolio-logo-row {
+  min-height: 200px;
+}
+
+.is-compact .portfolio-logo-row {
+  min-height: auto;
+}
+
+.portfolio-logo {
+  background: url(images/logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 120px;
+  width: 234px;
+}
+
+.is-compact .portfolio-logo {
+  height: 50px;
+  width: 98px;
+}
+
+.portfolio-navigation-row {
+  background-color: #EEEEEE;
+  text-transform: uppercase;
+  height: 45px;
+
+}
+
+.portfolio-navigation-row  .mdl-navigation {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  font-family: 'Audiowide', cursive;
+}
+
+.portfolio-navigation-row .mdl-navigation__link {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 42px;
+    color: #455A64;
+}
+
+.portfolio-header .mdl-layout__drawer-button {
+    color: rgb(41, 97, 253);
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.portfolio-navigation-row .is-active {
+  position: relative;
+  font-weight: bold;
+  color: #2962FF;
+}
+
+.portfolio-navigation-row .is-active:after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2962FF;
+  left: 15%;
+}
+
+.portfolio-card .mdl-card__title {
+  padding-bottom: 0;
+}
+
+.portfolio-blog-card-full-bg {
+  background: url(images/example-blog03.jpg) center / cover;
+}
+
+.portfolio-blog-card-event-bg {
+  background: url(images/example-blog05.jpg) center / cover;
+}
+
+.portfolio-blog-card-strip-bg {
+  background: url(images/example-blog06.jpg) center / cover;
+}
+
+.portfolio-blog-card-compact .mdl-card__title {
+  padding-bottom: 0;
+}
+
+.portfolio-blog-card-bg > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+img.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-max-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+.portfolio-copy {
+  max-width: 700px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-left-padding{
+  padding-left: 0;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.padding-top {
+  padding: 10px 0 0;
+}
+
+.portfolio-share-btn {
+  position: relative;
+  float: right;
+  top: -4px;
+}
+
+.demo-card-event > .mdl-card__actions {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.portfolio-contact .mdl-textfield {
+  width: 100%;
+}
+
+.portfolio-contact form {
+  max-width: 550px;
+  margin: auto;
+}
+
+footer {
+  background-size: cover;
+}
+
+.mdl-mini-footer {
+    background-color: #EEEEEE;
+    height: 0px;
+    align-items: center;
+    font-family: 'Audiowide', cursive;
+    color: #455A64;
+    padding: 24px;
 }
